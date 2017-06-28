@@ -152,7 +152,7 @@
     }
     #what-you-learn-carousel .carousel-indicators {}
     #what-you-learn-carousel .carousel-indicators li {
-        background-image: url("../images/check.png");
+        background-image: url("../images/cross.png");
         background-repeat: no-repeat;
         background-size: 23px 23px;
         padding: 0 0 15px 40px;
