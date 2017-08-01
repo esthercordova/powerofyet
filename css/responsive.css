@@ -115,6 +115,7 @@
         width: 65%;
         margin: 0 auto 30px;
     }
+
 }
 
 /*======== SCREEN RESOLUTION 768+ =============*/
@@ -692,5 +693,11 @@
     .footer p {
     margin-top: 5px;
     margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 767px){
+ #what-you-learn {
+        display: none;
     }
 }
