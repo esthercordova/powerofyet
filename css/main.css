@@ -748,7 +748,7 @@ button.mfp-arrow {
     fill-opacity: 0.2;
 }
 .book-trailer svg:hover polygon {
-    
+
     stroke: none;
 }
 .book-trailer svg:hover path {
@@ -816,6 +816,7 @@ button.mfp-arrow {
     padding-left: 0;
     list-style: none;
     text-align: left;
+
 }
 #what-you-learn-carousel .carousel-indicators li {
     text-indent: 0;
@@ -823,7 +824,7 @@ button.mfp-arrow {
     border-radius: 0;
     cursor: pointer;
     background-color: transparent;
-    color: #FF3B6B;
+    color: #4d4d54;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -841,7 +842,8 @@ button.mfp-arrow {
 }
 #what-you-learn-carousel .carousel-indicators li.active {
     background-color: #ddd;
-    
+    color: #FF3B6B;
+
 }
 .book-page-2{
     margin-top: 30px;
