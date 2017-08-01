@@ -1,5 +1,5 @@
 /* ================================
-* LIST OF MEDIA QUERIES                    
+* LIST OF MEDIA QUERIES
 * ================================
 
     1.@media (min-width: 400px){} (LARGE MOBILES)
@@ -145,14 +145,14 @@
     .book-page-2-inner {
         background-color: #f7f7f7;
         padding: 60px 40px;
-        height: 450px;
+        height: 400px;
     }
     .book-page-2-inner {
         padding: 30px 40px;
     }
     #what-you-learn-carousel .carousel-indicators {}
     #what-you-learn-carousel .carousel-indicators li {
-        background-image: url("../images/cross.png");
+        /*background-image: url("../images/cross.png");*/
         background-repeat: no-repeat;
         background-size: 23px 23px;
         padding: 0 0 15px 40px;
