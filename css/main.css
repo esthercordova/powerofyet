@@ -400,7 +400,7 @@ html.no-preserve3d #items > div {
     position: absolute;
     width: 35px;
     height: 290px;
-    background-image: url("../images/book/book-side.png");
+    background-image: url("../images/book/book-side-try.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     -webkit-transform: translatex(-17.5px) rotatey(-90deg);
