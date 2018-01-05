@@ -10,7 +10,12 @@
 
 ==================================*/
 
+@media (max-width: 400px) {
+ .book-review-video {
+        display: none;
+    }
 
+}
 
 
 /*======== SCREEN RESOLUTION 400+ =============*/
