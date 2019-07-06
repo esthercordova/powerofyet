@@ -5,7 +5,7 @@ $(function () {
 
     /**
      * ================================
-     * PRELOADER                     
+     * PRELOADER
      * ================================
      */
     // makes sure the whole site is loaded
@@ -20,7 +20,7 @@ $(function () {
 
     /*
      * ================================
-     * Scrolling Animations                     
+     * Scrolling Animations
      * ================================
      */
 
@@ -47,7 +47,7 @@ $(function () {
 
     /*
      * ================================
-     * Book flipping animation Animations                     
+     * Book flipping animation Animations
      * ================================
      */
 
@@ -105,7 +105,7 @@ $(function () {
 
     /*
      * ================================
-     * Book hover animation                     
+     * Book hover animation
      * ================================
      */
 
@@ -124,7 +124,7 @@ $(function () {
 
     /*
      * ================================
-     * Look Inside hover animation                     
+     * Look Inside hover animation
      * ================================
      */
 
@@ -144,7 +144,7 @@ $(function () {
 
     /*
      * ================================
-     * Look Inside Click Animation                     
+     * Look Inside Click Animation
      * ================================
      */
 
@@ -163,7 +163,7 @@ $(function () {
 
     /*
      * ================================
-     * Enlarging Book Image                     
+     * Enlarging Book Image
      * ================================
      */
 
@@ -184,7 +184,7 @@ $(function () {
 
     /*
      * ================================
-     * .listen/Audio Player                     
+     * .listen/Audio Player
      * ================================
      */
 
@@ -233,7 +233,7 @@ $(function () {
 
     /*
      * ================================
-     * Video Player                     
+     * Video Player
      * ================================
      */
 
@@ -245,7 +245,7 @@ $(function () {
 
     /*
      * ================================
-     * Chapters Section Animation                     
+     * Chapters Section Animation
      * ================================
      */
 
@@ -257,7 +257,7 @@ $(function () {
 
     /*
      * ================================
-     * Gallery Section Image Popup                     
+     * Gallery Section Image Popup
      * ================================
      */
 
@@ -267,7 +267,7 @@ $(function () {
         removalDelay: 500,
         callbacks: {
             beforeOpen: function () {
-                // just a hack that adds mfp-anim class to markup 
+                // just a hack that adds mfp-anim class to markup
                 this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
                 this.st.mainClass = this.st.el.attr('data-effect');
             }
@@ -280,14 +280,14 @@ $(function () {
 
     /*
      * ================================
-     * Free Chapter section Mailchimp Subscribe form                    
+     * Free Chapter section Mailchimp Subscribe form
      * ================================
      */
 
     $("#mailchimp-subscribe").ajaxChimp({
         callback: mailchimpCallback,
 
-        // Replace your mailchimp post url inside double quote "".  
+        // Replace your mailchimp post url inside double quote "".
         url: "http://github.us12.list-manage.com/subscribe/post?u=f882ab586d827f13fb5b356d0&amp;id=224d934820"
 
     });
@@ -324,5 +324,37 @@ $(function () {
     };
 
 
+    var form = $('.contact-form'),
+        message = $('.contact-msg'),
+        form_data;
+    // Success function
+    function done_func(response) {
+        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+        message.text(response);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+        form.find('input:not([type="submit"]), textarea').val('');
+    }
+    // fail function
+    function fail_func(data) {
+        message.fadeIn().removeClass('alert-success').addClass('alert-success');
+        message.text(data.responseText);
+        setTimeout(function () {
+            message.fadeOut();
+        }, 2000);
+    }
+
+    form.submit(function (e) {
+        e.preventDefault();
+        form_data = $(this).serialize();
+        $.ajax({
+            type: 'post',
+            url: form.attr('action'),
+            data: form_data
+        })
+        .done(done_func)
+        .fail(fail_func);
+    });
 
 });

@@ -10,9 +10,10 @@
 
 ==================================*/
 
-@media (max-width: 400px) {
- .book-review-video {
-        display: none;
+@media (max-width: 560px) {
+ .book-review-video iframe{
+   width: 100%;
+height: 210px;
     }
 
 }
@@ -59,7 +60,7 @@
         margin-bottom: 10px;
     }
     .side {
-        height: 402px;
+        height: 399px;
     }
     /*======= chapter =======*/
     .chapter-back {
@@ -258,6 +259,17 @@
     }
     /*================= footer ==============*/
 }
+@media(max-width: 991px) {
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: #cacaca;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 0px 5px 20px;
+  transition: all 0.3s;
+      white-space: normal;
+}
+}
 
 /*======== SCREEN RESOLUTION 992+ =============*/
 @media(min-width: 992px) {
@@ -277,6 +289,10 @@
         letter-spacing: 3px;
     }
     /*======= top navbar =======*/
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    text-align: left;
+  }
     .navbar-collapse ul {
         width: auto;
         margin: 0;
