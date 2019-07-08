@@ -289,7 +289,9 @@ height: 210px;
         letter-spacing: 3px;
     }
     /*======= top navbar =======*/
-
+    .main-img {
+      height: calc(100vh - 50px);
+    }
   .navbar-default .navbar-nav .open .dropdown-menu>li>a{
     text-align: left;
   }

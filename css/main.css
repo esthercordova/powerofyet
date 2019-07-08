@@ -734,10 +734,10 @@ button.mfp-arrow {
 .as-seen-img {
     height: 150px;
 }
-.as-seen-on > img {
-    padding-bottom: 40px;
+.main-img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover
 }
 .buy-amazon-img{
   max-width: 150px;
@@ -1431,6 +1431,7 @@ a span.img-caption {
     text-align: left;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 .reviews .carousel-indicators li {
     text-indent: 0;
@@ -2399,7 +2400,7 @@ Table of Contents
     display: inline-block;
     text-transform: uppercase;
     border: 2px solid #2c3e50;
-    margin-top: 100px;
+    margin: 55px 20px;
     font-size: 1em;
     font-weight: 700;
     padding: 0.1em 0.4em;
