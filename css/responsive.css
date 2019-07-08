@@ -293,6 +293,10 @@ height: 210px;
   .navbar-default .navbar-nav .open .dropdown-menu>li>a{
     text-align: left;
   }
+  .nav li .buy-now{
+    margin-top: 10px;
+    margin-left: 5px;
+  }
     .navbar-collapse ul {
         width: auto;
         margin: 0;
@@ -721,4 +725,7 @@ height: 210px;
  #what-you-learn {
         display: none;
     }
+  .book{
+    margin: 40px 40px;
+  }
 }

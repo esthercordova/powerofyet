@@ -1,17 +1,17 @@
 
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "post") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "minuswant@gmail.com";
+        $mail_to = "estherpiacordova@gmail.com";
 
         # Sender Data
-        $subject = trim($_POST["subject"]);
+        $subject = "Question from Contact page";
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
-        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($subject) OR empty($message)) {
+        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($message)) {
             # Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Please complete the form and try again.";
@@ -24,7 +24,7 @@
         $content .= "Message:\n$message\n";
 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: Contact Page <office@powerofyet.com>\r\n"; //Наименование и почта отправителя
+        $headers .= "From: Power of Yet <office@powerofyet.com>\r\n"; //Наименование и почта отправителя
         $success = mail($mail_to, $subject, $content, $headers); //Отправка письма с помощью функции mail
 
         if ($success) {

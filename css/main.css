@@ -51,6 +51,7 @@ Author: Wahid Polin
 
 //=====================================================================
 //=====================================================================*/
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Merriweather:400,400i|Open+Sans:300i,400,700&display=swap');
 
 body {
     position: relative;
@@ -115,6 +116,10 @@ p {
     line-height: 24px;
     color: #777;
     margin-bottom: 20px;
+}
+.alert{
+  margin-top: 20px;
+  margin-bottom: 0
 }
 .carousel-indicators li {
     color: #FF3B6B;
@@ -316,7 +321,10 @@ a:focus {
     background-color: #3C3C3C;
 }
 
-
+.nav li .buy-now{
+  font-size: 12px;
+  padding: 5px;
+}
 
 
 /*===================================================================
@@ -726,12 +734,15 @@ button.mfp-arrow {
 .as-seen-img {
     height: 150px;
 }
-.as-seen-on img {
+.as-seen-on > img {
     padding-bottom: 40px;
     width: 100%;
     height: auto;
 }
-
+.buy-amazon-img{
+  max-width: 150px;
+margin: 0 auto;
+}
 
 
 

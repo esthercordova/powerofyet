@@ -324,7 +324,7 @@ $(function () {
     };
 
 
-    var form = $('.contact-form'),
+    var form = $('#contact-form'),
         message = $('.contact-msg'),
         form_data;
     // Success function
@@ -333,7 +333,7 @@ $(function () {
         message.text(response);
         setTimeout(function () {
             message.fadeOut();
-        }, 2000);
+        }, 6000);
         form.find('input:not([type="submit"]), textarea').val('');
     }
     // fail function
@@ -342,15 +342,15 @@ $(function () {
         message.text(data.responseText);
         setTimeout(function () {
             message.fadeOut();
-        }, 2000);
+        }, 6000);
     }
 
     form.submit(function (e) {
         e.preventDefault();
         form_data = $(this).serialize();
         $.ajax({
-            type: 'post',
-            url: form.attr('action'),
+            type: 'POST',
+            url: 'mail.php',
             data: form_data
         })
         .done(done_func)
