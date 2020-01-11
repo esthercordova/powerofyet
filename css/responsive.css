@@ -1,0 +1,729 @@
+/* ================================
+* LIST OF MEDIA QUERIES
+* ================================
+
+    1.@media (min-width: 400px){} (LARGE MOBILES)
+    2.@media (min-width: 500px){} (LARGE MOBILES)
+    3.@media (min-width: 768px){} (TABLETS)
+    4.@media (min-width: 992px){} (MEDIUM SCREEN/LARGE TABLETS)
+    5.@media (min-width: 1200px){} (DESKTOPS/LAPTOPS)
+
+==================================*/
+
+@media (max-width: 560px) {
+ .book-review-video iframe{
+   width: 100%;
+height: 210px;
+    }
+
+}
+
+
+/*======== SCREEN RESOLUTION 400+ =============*/
+@media (min-width: 400px) {
+    /*======= hero =======*/
+    .package {
+        width: 321px;
+        height: 467px;
+        margin: 0 auto 50px;
+    }
+    #items {
+        width: 321px;
+        height: 467px;
+    }
+    #front,#back{
+         width: 321px;
+        height: 467px;
+    }
+    .book-buttons {
+        position: relative;
+        margin: 0 auto 50px;
+        top: 0;
+        width: 350px;
+    }
+    .book-buttons button {
+        width: 160px;
+    }
+    #inline-popups li {
+        width: 160px;
+    }
+    .flip-icon {
+        margin-right: 2px;
+    }
+    .enlarge {
+        margin-left: 20px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .listen {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .side {
+        height: 399px;
+    }
+    /*======= chapter =======*/
+    .chapter-back {
+        padding: 40px;
+    }
+    /*======= read anywhere =======*/
+    .read-anywhere .carousel-indicators li {
+        font-size: 13px;
+        padding: 5px 10px;
+        margin-right: 5px;
+    }
+    .read-anywhere .carousel-inner img {
+        width: 300px;
+    }
+    /*======= pricing =======*/
+    .pricing .carousel-indicators li {
+        width: auto;
+        padding: 3px 4px;
+        margin-right: 2px;
+        letter-spacing: 2px;
+    }
+}
+
+/*======== SCREEN RESOLUTION 500+ =============*/
+@media (min-width: 500px) {
+    .navbar-collapse ul {
+        width: 40%;
+    }
+    .hero blockquote {
+        max-width: 492px;
+        margin: 0 auto 30px;
+    }
+    .hero button.buy-now {
+        max-width: 492px;
+        margin: 0 auto;
+    }
+    /*======= free chapter =======*/
+    .free-chapter ul li {
+        width: 200px;
+    }
+    .reviews .carousel-indicators {
+        max-width: 80%;
+    }
+    .reviews blockquote {
+        max-width: 80%;
+        padding: 0;
+    }
+    .read-anywhere .carousel-indicators li {
+        font-size: 14px;
+        padding: 5px 15px;
+        margin-right: 8px;
+    }
+    .pricing .carousel-indicators li {
+        padding: 5px 15px;
+        margin-right: 5px;
+    }
+    .pricing ul {
+        width: 65%;
+        margin: 0 auto 30px;
+    }
+
+}
+
+/*======== SCREEN RESOLUTION 768+ =============*/
+@media(min-width: 768px) {
+    /*======= general =======*/
+    .page {
+        padding: 80px 0 80px;
+    }
+    .main-heading {
+        margin-bottom: 60px;
+    }
+    .no-gutter > [class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /*======= hero =======*/
+    .hero h1 {
+        font-size: 40px;
+    }
+    /*======= what you learn =======*/
+    .papers-1 {
+        margin-left: 30px;
+        border: #ccc solid 1px;
+        background-color: #fff;
+        box-shadow: -4px 4px 0 #fff, -5px 5px 0 #ccc, -9px 9px 0 #fff, -10px 10px 0 #ccc
+    }
+    .book-page-1-inner,
+    .book-page-2-inner {
+        background-color: #f7f7f7;
+        padding: 60px 40px;
+        height: 400px;
+    }
+    .book-page-2-inner {
+        padding: 30px 40px;
+    }
+    #what-you-learn-carousel .carousel-indicators {}
+    #what-you-learn-carousel .carousel-indicators li {
+        /*background-image: url("../images/cross.png");*/
+        background-repeat: no-repeat;
+        background-size: 23px 23px;
+        padding: 0 0 15px 40px;
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+        border: none;
+    }
+    #what-you-learn-carousel .carousel-indicators li.active {
+        background-color: transparent;
+    }
+    .book-page-2 {
+        margin-top: 0;
+    }
+    .papers-2 {
+        margin-right: 30px;
+        border: #ccc solid 1px;
+        box-shadow: 4px 4px 0 #fff, 5px 5px 0 #ccc, 9px 9px 0 #fff, 10px 10px 0 #ccc;
+        border-left: none;
+    }
+    /*======= chapters ==========*/
+    .chapter .back p {
+        padding: 0 20px 20px;
+        text-align: left;
+    }
+    .chapter .back .chapter-back-top {
+        padding: 20px;
+    }
+    /*======= reviews ========*/
+    .reviews .carousel-indicators {
+        position: static;
+        margin-left: 0;
+        max-width: 533px;
+        margin: 0 auto;
+    }
+    .reviews .carousel-indicators li{
+        font-size:14px;
+    }
+    .reviews blockquote {
+        font-family: 'Cardo', serif;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: italic;
+        border-left: none;
+        max-width: 533px;
+        margin: 40px auto 0;
+        color: #777;
+    }
+    .reviews blockquote:before {
+        content: '\201C';
+        font-family: 'Arial Black';
+        font-style: normal;
+        font-size: 100px;
+        color: rgba(87, 87, 87, 0.2);
+        position: absolute;
+        left: 30px;
+        top: 8px;
+    }
+    .cite-right {
+        margin-left: 30px;
+    }
+    .cite-name {
+        margin-top: 25px;
+    }
+    /*======== author ======*/
+    .author h1 {
+        margin-bottom: 60px;
+    }
+    /*======== contributors =========*/
+    .contributor {
+        max-width: 500px;
+    }
+    .contributor-inner {
+        border: 4px solid white;
+        padding: 20px;
+    }
+    .contributors .contributor h4 {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+    .contributor-img {
+        margin-bottom: 0;
+        text-align: left;
+    }
+    .contributor-desc {
+        text-align: left;
+    }
+    .contributor p {
+        margin-bottom: 5px;
+    }
+    /*============== cta ==============*/
+    .cta h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        line-height: 50px;
+    }
+    /*================= footer ==============*/
+}
+@media(max-width: 991px) {
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+  color: #cacaca;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 0px 5px 20px;
+  transition: all 0.3s;
+      white-space: normal;
+}
+}
+
+/*======== SCREEN RESOLUTION 992+ =============*/
+@media(min-width: 992px) {
+    /*======= general =======*/
+    h1 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+    /*======= top navbar =======*/
+    .main-img {
+      height: calc(100vh - 50px);
+    }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+    text-align: left;
+  }
+  .nav li .buy-now{
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+    .navbar-collapse ul {
+        width: auto;
+        margin: 0;
+    }
+    .details .container-custom {
+        padding: 0 2rem 0 459px;
+        max-width: 975px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        letter-spacing: 1px;
+    }
+    /*======= hero =======*/
+    .package {
+        margin-left: -420px;
+        float: left;
+    }
+    #items {
+        margin: 0;
+    }
+    .book-buttons {
+        position: absolute;
+        margin: 0;
+        top: 500px;
+        width: 350px;
+        margin-left: -415px;
+    }
+    .book-buttons button {
+        width: 150px;
+        padding: 5px 8px;
+    }
+    #inline-popups li {
+        width: 150px;
+        padding: 4px 8px;
+    }
+    .enlarge {
+        margin-left: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    .listen {
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    .features {
+        font-size: 0.875em;
+        padding: 20px 1.5em 0 0;
+        max-width: 100%;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+    .hero h3 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .hero h1 {
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+    .hero h5 {
+        margin-bottom: 50px;
+    }
+    .hero .features h5 {
+        text-align: left;
+    }
+    .hero blockquote {
+        border-left: 4px solid rgba(0, 0, 0, 0.1);
+        margin-left: 4px;
+        padding-left: 20px;
+        margin: 0 0 50px;
+    }
+    .hero blockquote:before {
+        content: '';
+        font-family: 'Arial Black';
+        font-size: 79px;
+        color: rgba(87, 87, 87, 0.3);
+        position: absolute;
+        left: 0;
+        top: 19px;
+    }
+    .hero cite {
+        display: block;
+        padding: 15px 0;
+        margin-top: 20px;
+        line-height: 0;
+    }
+    .hero button.buy-now {
+        max-width: 492px;
+        margin: 0;
+        margin-top: 6px;
+    }
+    /*======= facts =======*/
+    .fact {
+        padding: 0;
+        margin: 0;
+        height: auto;
+        background-color: transparent;
+    }
+    .book-facts {
+        background-color: #f7f7f7;
+        border-top: 2px solid #e6e6e6;
+        border-bottom: 2px solid #e6e6e6;
+    }
+    /*======= book trailer =======*/
+    .book-trailer {
+        height: 480px;
+    }
+    .trailer-text {
+        margin-top: 60px;
+    }
+    .book-trailer svg {
+        width: 124px;
+        height: 124px;
+    }
+    .book-trailer svg polygon,
+    .book-trailer svg path {
+        stroke-width: 1px;
+    }
+    /*======= chapter =======*/
+    .chapter h3 {
+        margin-bottom: 0;
+    }
+    .chapter-back {
+        padding: 30px;
+    }
+    /*======= reviews =======*/
+    .reviews {
+        border-bottom: 2px solid #e6e6e6;
+        border-top: 2px solid #e6e6e6;
+    }
+    .reviews blockquote:before {
+        left: 120px;
+    }
+    .reviews blockquote {
+        max-width: 60%;
+    }
+    .reviews .carousel-indicators {
+        max-width: 700px;
+    }
+    .reviews .carousel-indicators li {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        padding: 5px 15px;
+    }
+    /*======= read anywhere =======*/
+    .read-anywhere .carousel-indicators {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+        margin-top: 36px;
+    }
+    .read-anywhere .carousel-indicators li {
+        width: 195px;
+        height: 160px;
+        float: left;
+        margin: 0;
+        margin-top: 28px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    #read-anywhere-slider .carousel-indicators li.active {}
+    .read-anywhere .carousel-indicators li.mobile {
+        margin-left: 0;
+    }
+    .read-anywhere .carousel-indicators li.tablet {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .read-anywhere .carousel-indicators li.laptop {
+        margin-top: 0;
+    }
+    .read-anywhere .carousel-indicators li img {
+        display: block;
+        margin: 40px auto 20px;
+    }
+    .read-anywhere .carousel-inner img.read-ipad {
+        width: 320px;
+        margin: 20px auto 0;
+    }
+    .read-anywhere .carousel-inner img.read-kindle {
+        margin: 0 auto;
+        width: 300px;
+    }
+    .read-anywhere .carousel-inner img.read-laptop {
+        margin-top: 100px;
+    }
+    .read-anywhere .carousel-inner img.read-iphone {
+        margin-top: 50px;
+        margin-left: 5%;
+        width: 350px;
+    }
+    /*======= bonuses =======*/
+    .bonus {
+        max-width: 100%;
+        margin: 0 0 60px;
+    }
+    .bonus h2,
+    .bonus h4,
+    .bonus-span {
+        text-align: left;
+    }
+    .bonus-browser {
+        margin-top: 40px;
+    }
+    .img-stack img {
+        margin: 0;
+    }
+    /*======= pricing =======*/
+    .pricing .carousel-inner {
+        max-width: 100%;
+        margin: 0;
+    }
+    .pricing-book img {
+        margin: 0 auto;
+        max-height: 345px;
+    }
+    .pricing .custom-button {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .pricing .carousel-indicators li {
+        width: auto;
+        padding: 5px 15px;
+        margin-right: 5px;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    .pricing .carousel-inner .item {
+        margin: 50px 15px;
+    }
+    /*======= faqs =======*/
+    .faqs.page {
+        padding-bottom: 40px;
+    }
+    .faqs {
+        border-top: 2px solid #e6e6e6;
+        border-bottom: 2px solid #e6e6e6;
+    }
+    .faq {
+        max-width: 100%;
+        margin: 0;
+    }
+    .faqs h3 {
+        font-size: 20px;
+    }
+    .faq h4 {
+        text-align: left;
+    }
+    .faqs p {
+        margin-bottom: 40px;
+    }
+    .faq p {
+        max-width: 90%;
+    }
+    /*======= author =======*/
+    .author {
+        border-bottom: 2px solid #e6e6e6;
+    }
+    .author h1 {
+        text-align: left;
+    }
+    .author h1 span {
+        font-weight: 300;
+    }
+    .author img {
+        width: auto;
+        max-height: 288px;
+    }
+    /*======= cta =======*/
+    .cta span {
+        font-weight: 300;
+    }
+    /*======= contributors =======*/
+    .contributors h3 {
+        font-size: 20px;
+    }
+    .contributors h4 {
+        margin: 7px 0 4px;
+    }
+    .contributors p {
+        margin-bottom: 6px;
+    }
+    .contributor-img {
+        margin-bottom: 0;
+    }
+    .contributor {
+        max-width: 100%;
+        margin: 0 0 30px;
+    }
+    /*======= footer =======*/
+    .footer-left {
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        margin-bottom: 0;
+    }
+}
+
+/*======== SCREEN RESOLUTION 1200+ =============*/
+@media(min-width: 1200px) {
+    /*======= top navbar =======*/
+    .navbar-default .navbar-nav>li>a {
+        letter-spacing: 2px;
+    }
+    /*======= hero =======*/
+    .details .container-custom {
+        padding: 0 32px 0 459px;
+        max-width: 1168px;
+    }
+    .package {
+        margin-left: -390px;
+    }
+    .book-buttons {
+        position: absolute;
+        margin: 0;
+        top: 500px;
+        width: 500px;
+        margin-left: -460px;
+    }
+    .book-buttons button {
+        width: auto;
+        padding: 5px 8px;
+    }
+    #inline-popups li {
+        width: auto;
+        padding: 5px 8px;
+    }
+    .enlarge {
+        margin-left: 0;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .features {
+        padding: 20px 21px 0 130px;
+    }
+    .listen {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .white-popup {
+        width: 80%;
+        padding: 40px 10px 10px;
+    }
+    .white-popup .white-popup-inner {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        overflow: scroll;
+    }
+    .white-popup .book-wrapper {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+    /*======= trailer =======*/
+    .trailer-text {
+        margin-top: 70px;
+    }
+    /*======= read anywhere =======*/
+    .book-page-2-inner {
+        padding: 60px 40px;
+    }
+    #read-anywhere-slider .carousel-indicators {
+        margin-top: 30px;
+    }
+    .read-anywhere .carousel-indicators li {
+        width: 250px;
+        height: 160px;
+        border: 1px solid #d5d5d5;
+        margin: 0;
+        margin-bottom: 40px;
+        margin-left: 40px;
+    }
+    .read-anywhere .carousel-inner img.read-ipad {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .read-anywhere .carousel-inner img.read-laptop {
+        margin-top: 50px;
+    }
+    .read-anywhere .carousel-inner img.read-iphone {
+        margin-left: 5%;
+        width: 350px;
+        margin-top: 45px;
+    }
+    .read-anywhere .carousel-inner img.read-kindle {
+        margin: 0 auto;
+        width: 300px;
+    }
+    /*======= chapter =======*/
+    .chapter .back p {
+        padding: 0 35px 20px 40px;
+    }
+    .chapter .back .chapter-back-top {
+        padding: 30px 50px 20px;
+    }
+    /*======= reviews =======*/
+    .cite-name {
+    margin-top: 55px;
+    }
+    /*======= bonuses =======*/
+    .bonus h3 {
+        font-size: 24px;
+    }
+    .img-stack img {
+        margin-top: 20px;
+    }
+    /*======= author =======*/
+    .author img {
+        width: auto;
+        max-height: 288px;
+        margin: 0;
+    }
+    /*======== free chapter ==========*/
+    .free-chapter {
+        border-top: 2px solid #e6e6e6;
+    }
+    .form-wrapper {
+        padding: 60px 30px;
+    }
+    /*======= footer =======*/
+    .footer p {
+    margin-top: 5px;
+    margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 767px){
+  .book{
+    margin: 40px 40px;
+  }
+}
