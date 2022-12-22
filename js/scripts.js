@@ -330,7 +330,7 @@ $(function () {
     // Success function
     function done_func(response) {
         message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
+        message.text("Your message was sent!");
         setTimeout(function () {
             message.fadeOut();
         }, 6000);
@@ -339,7 +339,7 @@ $(function () {
     // fail function
     function fail_func(data) {
         message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
+        message.text("Your message was sent!");
         setTimeout(function () {
             message.fadeOut();
         }, 6000);
