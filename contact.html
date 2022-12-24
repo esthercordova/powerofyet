@@ -158,13 +158,14 @@ src="https://www.facebook.com/tr?id=137131793656446&ev=PageView
                     <div class="col-md-6">
                         <div class="contact-form">
                             <div class="contact-form-wrapper form-1">
-
-                              <form id="contact-form">
-                                    <input type="text" name="name" tabindex="-1" placeholder="Your Name" class="contact-input" required>
-                                    <input type="email" name="email" tabindex="-1" placeholder="Email Address" class="contact-input"  required>
-                                    <textarea type="text" name="message" tabindex="-1" placeholder="Your message" class="contact-input" required></textarea>
-                                    <button type="submit" class="btn btn-block custom-button">Send</button>
-                                </form>
+                                
+                            <form id="contact-form" action="https://formspree.io/f/mjvdbpez" method="POST">
+                                <input type="text" tabindex="-1" name="text" placeholder="Your Name" class="contact-input" required />
+                                <input type="email" name="email" tabindex="-1" placeholder="Email Address" class="contact-input"  required />
+                                <textarea type="text" name="message" tabindex="-1" placeholder="Your message" class="contact-input" required></textarea>
+                                <button id="my-form-button">Submit</button>
+                                <p id="my-form-status"></p>
+                            </form>
                                 <div class="alert alert-success contact-msg" style="display: none" role="alert">
                                     Your message was sent successfully.
                                 </div>

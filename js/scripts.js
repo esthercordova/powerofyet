@@ -345,16 +345,28 @@ $(function () {
         }, 6000);
     }
 
-    form.submit(function (e) {
-        e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func);
-    });
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            done_func();
+          } else {
+            fail_func();
+          }
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+        return false;
+      }
+      form.addEventListener("submit", handleSubmit)
+  
 
 });
